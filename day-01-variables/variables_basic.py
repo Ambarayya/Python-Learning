@@ -192,3 +192,125 @@ x = True
 
 print(x)
 print(type(x))
+
+
+# ============================================================
+# Exercise 1 - Employee Information
+# ============================================================
+
+emp_name = "Ambarayya"
+emp_id = 25
+emp_salary = 25000
+emp_exp = 2
+emp_dpt = "Software"
+
+print(f"Employee Name is: {emp_name}")
+print(f"Employee ID is: {emp_id}")
+print(f"Employee Salary is: {emp_salary}")
+print(f"Employee has {emp_exp} years experience.")
+print(f"Employee works in {emp_dpt} Department")
+
+
+# ============================================================
+# Exercise 2 - Salary Calculation
+# ============================================================
+
+"""
+Monthly salary = 45000
+Annual salary
+Monthly tax = 10%
+Salary after tax
+"""
+
+monthly_salary = 45000
+monthly_tax = 10
+
+annual_salary = monthly_salary * 12
+monthly_salary_after_tax = monthly_salary - (monthly_salary * monthly_tax) / 100
+annual_salary_after_tax = monthly_salary_after_tax * 12
+
+print(f"Monthly salary is: {monthly_salary}")
+print(f"The monthly tax deduction is: {monthly_tax}%")
+print(f"Monthly salary after tax is: {monthly_salary_after_tax}")
+print(f"Annual salary is: {annual_salary}")
+print(f"Annual salary after tax is: {annual_salary_after_tax}")
+
+
+# ============================================================
+# Exercise 3 - Shopping Bill
+# ============================================================
+
+item_price = 2300
+quantity = 4
+discount = 15
+
+total_price = item_price * quantity
+discount_amount = (total_price * discount) / 100
+final_bill = total_price - discount_amount
+
+print(f"The total price is: {total_price}")
+print(f"The discount amount for {discount}% is: {discount_amount}")
+print(f"The final bill after discount is: {final_bill}")
+
+
+# ============================================================
+# Exercise 4 - Understanding Variable Assignment
+# ============================================================
+
+x = 10
+y = x
+
+x = 20
+
+print(f"Value of x: {x}")
+print(f"Value of y: {y}")
+
+
+# ============================================================
+# Exercise 5 - String and Integer Concatenation
+# ============================================================
+
+"""
+The following code produces an error because an integer
+cannot be directly concatenated with a string using +.
+
+age = 23
+
+print("I am " + age + " years old")
+"""
+
+# Method 1 - Type conversion
+
+age = 23
+
+print("I am " + str(age) + " years old")
+
+
+# Method 2 - Using f-string
+
+print(f"I am {age} years old")
+
+
+# ============================================================
+# Exercise 6 - User Input
+# ============================================================
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+city = input("Enter your city: ")
+
+print(f"My name is {name}")
+print(f"I am {age} years old")
+print(f"I live in {city}")
+
+
+# ============================================================
+# Exercise 7 - Calculate Age
+# ============================================================
+
+birth_year = int(input("Enter your birth year: "))
+current_year = int(input("Enter the current year: "))
+
+age = current_year - birth_year
+
+print(f"Your age is: {age}")
